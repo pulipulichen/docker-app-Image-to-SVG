@@ -10,9 +10,10 @@ RUN apt-get install -y nodejs npm # 加上註解：安裝 Node.js 和 npm
 RUN curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y
 
 # Set the PATH environment variable to include Cargo's bin directory
-ENV PATH="/root/.cargo/bin:${PATH}"
+ENV PATH="/opt:${PATH}"
 
-RUN cargo install vtracer
+RUN mkdir -p /opt/
+RUN chmod 777 /opt/
+
+RUN cargo install vtracer --root /opt
 # 加上註解：指定 vtracer 執行的完整路徑
-
-RUN chmod +x /root/.cargo/bin/vtracer
