@@ -1,7 +1,7 @@
 version: "3"
 services:
   app:
-    image: pudding/docker-app:docker-app-Image-to-SVG-20250620.213455
+    image: pudding/docker-app:docker-app-Image-to-SVG-20250620.213546
     tty: true
     user: "${UID}:${GID}"
     command: node /app/index.js "/input/__INPUT__"
