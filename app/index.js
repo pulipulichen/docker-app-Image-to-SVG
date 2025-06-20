@@ -32,10 +32,10 @@ let main = async function () {
     await ShellExec(`cp "${file}" /tmp/input.${ext}`)
     file = `/tmp/input${ext}`
 
-    let isJPG = false
-    let isAVIF = false
-
     dirname = '/output/'
+
+    await ShellExec(`ls -la /root/.cargo/bin/vtracer`)
+
     await ShellExec(`/root/.cargo/bin/vtracer --input "${file}" --output "${path.resolve(dirname, filenameNoExt + ".svg")}"`)
     // convert -gravity center "c.png" -flatten -fuzz 1% -trim +repage -resize 64x64 -extent 64x64 "b.ico"
   }
