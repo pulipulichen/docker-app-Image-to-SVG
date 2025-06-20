@@ -1,7 +1,7 @@
 {
-  "name": "docker-app-Image-Cropper",
+  "name": "docker-app-Image-to-SVG",
   "version": "1.0.0",
-  "description": "Crop an image.",
+  "description": "Converts images to SVG vector format.",
   "main": "index.js",
   "scripts": {
     "start": "docker-compose up --build",
@@ -12,11 +12,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://pulipuli.chen@gmail.com@github.com/pulipulichen/docker-app-Image-Cropper.git"
+    "url": "git+https://pulipuli.chen@gmail.com@github.com/pulipulichen/docker-app-Image-to-SVG.git"
   },
   "keywords": [
     "Docker-APP",
-    "ImageMagick"
+    "vtracer"
   ],
   "author": {
     "name": "Yung-Ting Chen",
@@ -26,9 +26,9 @@
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/pulipulichen/docker-app-Image-Cropper/issues"
+    "url": "https://github.com/pulipulichen/docker-app-Image-to-SVG/issues"
   },
-  "homepage": "https://github.com/pulipulichen/docker-app-Image-Cropper#readme",
+  "homepage": "https://github.com/pulipulichen/docker-app-Image-to-SVG#readme",
   "dependencies": {
   }
 }
