@@ -29,8 +29,8 @@ let main = async function () {
       continue
     }
 
-    await ShellExec(`cp "${file}" /tmp/input.${ext}`)
-    file = `/tmp/input${ext}`
+    // await ShellExec(`cp "${file}" /tmp/input.${ext}`)
+    // file = `/tmp/input${ext}`
 
     dirname = '/output/'
 
