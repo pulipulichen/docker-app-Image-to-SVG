@@ -30,7 +30,7 @@ let main = async function () {
     }
 
     await ShellExec(`cp "${file}" /tmp/input.${ext}`)
-    file = `/tmp/input.${ext}`
+    file = `/tmp/input${ext}`
 
     let isJPG = false
     let isAVIF = false
