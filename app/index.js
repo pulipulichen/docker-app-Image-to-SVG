@@ -36,7 +36,7 @@ let main = async function () {
 
     await ShellExec(`ls -la /opt/`)
 
-    await ShellExec(`/opt/vtracer --input "${file}" --output "${path.resolve(dirname, filenameNoExt + ".svg")}"`)
+    await ShellExec(`/opt/bin/vtracer --input "${file}" --output "${path.resolve(dirname, filenameNoExt + ".svg")}"`)
     // convert -gravity center "c.png" -flatten -fuzz 1% -trim +repage -resize 64x64 -extent 64x64 "b.ico"
   }
 }
