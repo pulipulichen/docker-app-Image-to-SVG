@@ -14,3 +14,5 @@ ENV PATH="/root/.cargo/bin:${PATH}"
 
 RUN cargo install vtracer
 # 加上註解：指定 vtracer 執行的完整路徑
+
+RUN echo "20250620-2124"
